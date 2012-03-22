@@ -8,6 +8,6 @@
 <title>Hello page</title>
 </head>
 <body>
-	<h1>Spring MVC works</h1>
+	<h1>Spring MVC works again</h1>
 </body>
 </html>
