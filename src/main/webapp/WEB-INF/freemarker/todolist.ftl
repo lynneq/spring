@@ -2,19 +2,24 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Hello page</title>
+    <title>Todo List</title>
 </head>
 <body>
 <h1>Todo List</h1>
 <div class = "todolists">
     <table id = "todo_list_table">
         <tr>
-            <th>${message}</th>
-            <#assign seq = container>
-            <th><#list seq as x>
-                ${x_index + 1}. ${x}<#if x_has_next>,</#if>
-                </seq> </#list></th>
+            <td>${message}</td>
         </tr>
+    <#assign seq = container>
+    <#list seq as x>
+        <tr>
+            <td>
+                ${x_index + 1}. ${x}<#if x_has_next> </#if>
+            </seq>
+            </td>
+        </tr>
+    </#list>
     </table>
 </div>
 
